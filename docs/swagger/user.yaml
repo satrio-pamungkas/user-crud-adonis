@@ -1,0 +1,21 @@
+/api/v1/users:
+  post:
+    summary: Create a user
+    requestBody: 
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: Satrio Pamungkas
+                  required: true 
+                email:
+                  type: string
+                  example: satrio@upi.edu
+                  required: true
+    responses:
+     200:
+      description: Success
